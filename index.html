@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
@@ -15,6 +16,47 @@
   </style>
 </head>
 <body>
+
+  <section class="hero">
+    <img class="credit-card__back" src="images/bg-card-back.png" alt="back of credit card">
+  </section>
+
+  <div class="credit-card-container">
+    <img  class="credit-card__front" src="images/bg-card-front.png" alt="front of credit card">
+  </div>
+
+  <main>
+
+    <form>
+      <label for="cardholder_name">CARDHOLDER NAME</label>
+      <input type="text" id="cardholder_name" placeholder="e.g. Mark Smith"required>
+     
+
+      <label for="card_number">CARD NUMBER</label>
+      <input type="number" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required>
+
+      
+      
+      <fieldset class="date-month-cvc">
+
+        <div class="date-month-container">
+        <label>EXP. DATE (MM/YY)</label>
+          <input type="text" id="month" placeholder="MM" required>
+          <input type="text" id="year" placeholder="YY" required>
+        </div>
+
+        <div class="cvc-container">
+          <label>CVC</label>
+          <input type="text" id="cvc" placeholder="e.g. 123" required>
+        </div>
+
+      </fieldset>
+
+      <button>Confirm</button>
+    </form>
+
+  </main>
+
 
   0000 0000 0000 0000
   Jane Appleseed
@@ -45,7 +87,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sanjin Marceta</a>.
   </div>
 </body>
 </html>
