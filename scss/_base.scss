@@ -27,10 +27,11 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
+    box-sizing: border-box;
     font-size: 62.5%; //1 rem = 10px, 10px / 16 (browser default) = 62.5%
 }
 

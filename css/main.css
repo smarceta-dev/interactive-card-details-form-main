@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.hero {
+  padding: 5em;
+  padding-top: 3em;
+  background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple)); }
+  .hero img {
+    display: block;
+    width: 100%;
+    margin: 0 auto; }
+  .hero .credit-card__back {
+    margin-left: 10%;
+    z-index: -1; }
+
+.credit-card-container {
+  padding-left: 5em;
+  padding-right: 5em; }
+  .credit-card-container img {
+    margin-left: -3.5em;
+    margin-top: -12em;
+    width: 100%; }
+
+main form {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+main .date-month-cvc {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main label, main input {
+  display: block; }
+
+main .date-month-container {
+  width: 100%; }
+
+main .cvc-container {
+  display: flex;
+  flex: 0 0 50%; }
+
+:root {
+  --color-primrary-light-purple: hsl(249, 99%, 64%);
+  --color-primary-mid-purple: hsl(278, 94%, 30%);
+  --color-primray-red-error: hsl(0, 100%, 66%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-gray: hsl(270, 3%, 87%);
+  --color-neutral-dark-grey-violet: hsl(279, 6%, 55%);
+  --color-neutral-very-dark-violet: hsl(278, 68%, 11%);
+  --font-weight-default: 500;
+  --font-size-default: 18px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif; }
