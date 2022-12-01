@@ -1,0 +1,40 @@
+:root {
+
+    // Primary
+    --color-primrary-light-purple: hsl(249, 99%, 64%);
+    --color-primary-mid-purple: hsl(278, 94%, 30%);
+    --color-primray-red-error: hsl(0, 100%, 66%);
+
+    // Neutral
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-gray: hsl(270, 3%, 87%);
+    --color-neutral-dark-grey-violet: hsl(279, 6%, 55%);
+    --color-neutral-very-dark-violet: hsl(278, 68%, 11%);
+
+    // Font
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    --font-weight-default: 500; 
+    --font-size-default: 18px;
+    
+
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px, 10px / 16 (browser default) = 62.5%
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
