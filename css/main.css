@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .hero {
+  z-index: -1;
   padding: 5em;
   padding-top: 3em;
   background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple)); }
@@ -8,35 +9,97 @@
     width: 100%;
     margin: 0 auto; }
   .hero .credit-card__back {
-    margin-left: 10%;
-    z-index: -1; }
+    margin-left: 10%; }
 
 .credit-card-container {
-  padding-left: 5em;
-  padding-right: 5em; }
-  .credit-card-container img {
-    margin-left: -3.5em;
-    margin-top: -12em;
+  padding: 1rem 5rem 1rem 5rem;
+  margin-top: -12rem;
+  margin-left: -4rem;
+  z-index: 1; }
+  .credit-card-container .credit-card {
+    background-image: url("/images/bg-card-front.png");
+    color: white;
+    width: 100%;
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 1rem; }
+    .credit-card-container .credit-card .circle-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem; }
+      .credit-card-container .credit-card .circle-container .circle {
+        height: 3rem;
+        width: 3rem;
+        background-color: white;
+        border-radius: 100rem; }
+      .credit-card-container .credit-card .circle-container .small-circle {
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 1px solid white;
+        border-radius: 100rem; }
+    .credit-card-container .credit-card #cc_number {
+      display: block;
+      font-size: 2.5em;
+      text-align: center; }
+    .credit-card-container .credit-card .name-expdate-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem; }
+
+main {
+  margin: auto;
+  padding: 2.5rem;
+  overflow-x: auto;
+  white-space: nowrap; }
+  main form {
+    max-width: 100%;
+    box-sizing: border-box; }
+    main form fieldset {
+      border: none; }
+  main .date-month-cvc {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main label, main input {
+    display: block;
     width: 100%; }
-
-main form {
-  max-width: 100%;
-  box-sizing: border-box; }
-
-main .date-month-cvc {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-main label, main input {
-  display: block; }
-
-main .date-month-container {
-  width: 100%; }
-
-main .cvc-container {
-  display: flex;
-  flex: 0 0 50%; }
+  main input {
+    padding: 2rem;
+    border: 1px solid var(--color-neutral-gray);
+    border-radius: 1rem; }
+  main label {
+    font-size: var(--font-size-default);
+    font-weight: 700;
+    margin: 3rem 0 1rem 0;
+    color: var(--color-primary-mid-purple); }
+  main ::placeholder {
+    color: var(--color-neutral-gray);
+    font-size: var(--font-size-default); }
+  main .date-month-container {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column; }
+    main .date-month-container div {
+      display: flex;
+      justify-content: center;
+      gap: 1rem; }
+  main .cvc-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem; }
+  main #submit {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: var(--font-size-default);
+    color: var(--color-neutral-gray);
+    background-color: var(--color-neutral-very-dark-violet);
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 3rem; }
 
 :root {
   --color-primrary-light-purple: hsl(249, 99%, 64%);

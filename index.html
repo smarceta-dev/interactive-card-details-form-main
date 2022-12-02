@@ -9,11 +9,6 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -21,9 +16,23 @@
     <img class="credit-card__back" src="images/bg-card-back.png" alt="back of credit card">
   </section>
 
+  
   <div class="credit-card-container">
-    <img  class="credit-card__front" src="images/bg-card-front.png" alt="front of credit card">
+    <div class="credit-card">
+      <div class="circle-container">
+        <div class="circle"></div>
+        <div class="small-circle"></div>
+      </div>
+  
+      <p id="cc_number">0000 0000 0000 0000</p>
+  
+      <div class="name-expdate-container">
+        <p id="full_name">SANJIN MARCETA</p>
+        <p id="exp_date">10/21</p>
+      </div>
+    </div>
   </div>
+
 
   <main>
 
@@ -40,9 +49,11 @@
       <fieldset class="date-month-cvc">
 
         <div class="date-month-container">
-        <label>EXP. DATE (MM/YY)</label>
-          <input type="text" id="month" placeholder="MM" required>
-          <input type="text" id="year" placeholder="YY" required>
+          <label>EXP. DATE (MM/YY)</label>
+          <div>
+            <input type="text" id="month" placeholder="MM" required>
+            <input type="text" id="year" placeholder="YY" required>
+          </div>
         </div>
 
         <div class="cvc-container">
@@ -52,7 +63,7 @@
 
       </fieldset>
 
-      <button>Confirm</button>
+      <button id="submit">Confirm</button>
     </form>
 
   </main>
