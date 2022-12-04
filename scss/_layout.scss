@@ -1,77 +1,13 @@
+
 .hero {
-    z-index: -1;
-    padding: 5em;
-    padding-top:3em;
+
     background: linear-gradient(to top right, var(--color-neutral-very-dark-violet),var(--color-primary-mid-purple)) ;
-
-    img {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .credit-card__back { 
-        margin-left: 10%;
-       
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    
 }
-
-.credit-card-container {
-    padding: 1rem 5rem 1rem 5rem;
-    margin-top: -12rem;
-    margin-left: -4rem;
-    z-index: 1;
-
-    .credit-card {
-
-        background-image: url("/images/bg-card-front.png");
-        color: white;
-        width: 100%;
-        padding: 3rem 2rem 3rem 2rem;
-        border-radius: 1rem;
-        
-    
-        .circle-container{
-    
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-    
-            .circle {
-                height: 3rem;
-                width: 3rem;
-                background-color: white;
-                border-radius: 100rem;
-            }
-        
-            .small-circle {
-                height: 1.5rem;
-                width: 1.5rem;
-                border: 1px solid white;
-                border-radius: 100rem;
-            }
-        }
-    
-        #cc_number{
-            display: block;
-            font-size: 2.5em;
-            text-align: center;
-        }
-    
-        .name-expdate-container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top:2rem;
-        }
-        
-    }
-    
-
-}
-
 
 main { 
 
@@ -147,16 +83,8 @@ main {
 
     }
 
-    #submit {
-        width: 100%;
-        padding: 1.5rem;
-        font-size: var(--font-size-default);
-        color: var(--color-neutral-gray);
-        background-color: var(--color-neutral-very-dark-violet);
-        border: none;
-        border-radius: 0.5rem;
-        margin-top: 3rem;
-      }
+}
 
-
+.attribution {
+    text-align: center;
 }

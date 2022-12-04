@@ -1,51 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .hero {
-  z-index: -1;
-  padding: 5em;
-  padding-top: 3em;
-  background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple)); }
-  .hero img {
-    display: block;
-    width: 100%;
-    margin: 0 auto; }
-  .hero .credit-card__back {
-    margin-left: 10%; }
-
-.credit-card-container {
-  padding: 1rem 5rem 1rem 5rem;
-  margin-top: -12rem;
-  margin-left: -4rem;
-  z-index: 1; }
-  .credit-card-container .credit-card {
-    background-image: url("/images/bg-card-front.png");
-    color: white;
-    width: 100%;
-    padding: 3rem 2rem 3rem 2rem;
-    border-radius: 1rem; }
-    .credit-card-container .credit-card .circle-container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem; }
-      .credit-card-container .credit-card .circle-container .circle {
-        height: 3rem;
-        width: 3rem;
-        background-color: white;
-        border-radius: 100rem; }
-      .credit-card-container .credit-card .circle-container .small-circle {
-        height: 1.5rem;
-        width: 1.5rem;
-        border: 1px solid white;
-        border-radius: 100rem; }
-    .credit-card-container .credit-card #cc_number {
-      display: block;
-      font-size: 2.5em;
-      text-align: center; }
-    .credit-card-container .credit-card .name-expdate-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 2rem; }
+  background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; }
 
 main {
   margin: auto;
@@ -91,15 +50,9 @@ main {
     justify-content: center;
     align-items: center;
     padding-left: 1rem; }
-  main #submit {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: var(--font-size-default);
-    color: var(--color-neutral-gray);
-    background-color: var(--color-neutral-very-dark-violet);
-    border: none;
-    border-radius: 0.5rem;
-    margin-top: 3rem; }
+
+.attribution {
+  text-align: center; }
 
 :root {
   --color-primrary-light-purple: hsl(249, 99%, 64%);
@@ -128,3 +81,68 @@ html {
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif; }
+
+.credit-card__back {
+  background-image: url("/images/bg-card-back.png");
+  height: 16rem;
+  width: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 4rem; }
+  .credit-card__back p {
+    margin-right: 4rem;
+    color: white; }
+
+.credit-card {
+  background-image: url("/images/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 16rem;
+  width: 30rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-left: -4rem;
+  margin-top: -6.7rem;
+  z-index: 2;
+  color: white; }
+  .credit-card .circle-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem; }
+    .credit-card .circle-container .circle {
+      height: 3rem;
+      width: 3rem;
+      background-color: white;
+      border-radius: 100rem; }
+    .credit-card .circle-container .small-circle {
+      height: 1.5rem;
+      width: 1.5rem;
+      border: 1px solid white;
+      border-radius: 100rem; }
+  .credit-card #cc_number {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center; }
+  .credit-card .name-expdate-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem; }
+
+#submit {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: var(--font-size-default);
+  color: var(--color-neutral-gray);
+  background-color: var(--color-neutral-very-dark-violet);
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 3rem; }

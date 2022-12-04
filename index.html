@@ -13,25 +13,30 @@
 <body>
 
   <section class="hero">
-    <img class="credit-card__back" src="images/bg-card-back.png" alt="back of credit card">
-  </section>
 
-  
-  <div class="credit-card-container">
-    <div class="credit-card">
-      <div class="circle-container">
-        <div class="circle"></div>
-        <div class="small-circle"></div>
-      </div>
-  
-      <p id="cc_number">0000 0000 0000 0000</p>
-  
-      <div class="name-expdate-container">
-        <p id="full_name">SANJIN MARCETA</p>
-        <p id="exp_date">10/21</p>
-      </div>
+    <div class="credit-card__back">
+      <p id="card-back-cvc">000</p>
     </div>
-  </div>
+
+      <div class="credit-card">
+        <div class="circle-container">
+          <div class="circle"></div>
+          <div class="small-circle"></div>
+        </div>
+    
+        <p id="cc_number">0000 0000 0000 0000</p>
+    
+        <div class="name-expdate-container">
+          <p id="full_name">SANJIN MARCETA</p>
+          <p id="exp_date">
+            <span id="card_front_month">10</span>
+            /
+            <span id="card_front_year">21</span>
+          </p>
+        </div>
+      </div>
+   
+  </section>
 
 
   <main>
@@ -68,37 +73,17 @@
 
   </main>
 
-
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
   <!-- Completed state start -->
 
   Thank you!
   We've added your card details
-  Continue
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Sanjin Marceta</a>.
   </div>
+
+  <script src="javascript/script.js"></script>
 </body>
 </html>
