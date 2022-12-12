@@ -13,100 +13,37 @@ expMonth = document.getElementById('month');
 expYear = document.getElementById('year');
 cardCvc = document.getElementById('cvc');
 
+// Event listener for full name input
+fullName.addEventListener('input', (event) => {
 
-legalName = ""
-cc = ""
-m = ""
-y = ""
-cvc = ""
-
-// Event listeners for Legal Name
-fullName.addEventListener('keypress', (event) => {
-    legalName += event.key;
+    let legalName = fullName.value;
     cardFrontName.innerHTML = legalName;
+    
 })
 
-fullName.addEventListener('keydown', (event) => {
-
-    if(event.key === "Backspace" || event.key === "Delete"){
-
-            legalName = legalName.slice(0, -1);
-            cardFrontName.innerHTML = legalName;
-    }
+// Event listener for card number input
+cardNumb.addEventListener('input', (event) => {
+    let ccNumb = cardNumb.value;
+    if (ccNumb.length === 0) {
+        cardFrontNumber.innerHTML = "1234 5678 9123 0000"
+    }else {
+        cardFrontNumber.innerHTML = ccNumb;
+    } 
 })
 
-
-// Event listener for cc number
-cardNumb.addEventListener('keypress', (event) => {
-
-    if(cc.length < 19 ){
-    cc += event.key;
-    cardFrontNumber.innerHTML = cc;
-    }
+// Event listener for month input
+expMonth.addEventListener('input', (event) => {
+    let ccMonth = expMonth.value;
+    cardFrontMonth.innerHTML = ccMonth;
 })
 
-cardNumb.addEventListener('keydown', (event) => {
-
-    if(event.key === "Backspace" || event.key === "Delete"){
-
-            cc = cc.slice(0, -1);
-            cardFrontNumber.innerHTML = cc;
-    }
+// Event listener for year input
+expYear.addEventListener('input', (event) => {
+    let ccYear = expYear.value;
+    cardFrontYear.innerHTML = ccYear;
 })
 
-
-
-// Event listener for month 
-expMonth.addEventListener('keypress', (event) => {
-
-    if(m.length < 2 ){
-        m += event.key; 
-        cardFrontMonth.innerHTML = m ;
-    }
-})
-
-expMonth.addEventListener('keydown', (event) => {
-
-    if(event.key === "Backspace" || event.key === "Delete"){
-
-            m = m.slice(0, -1);
-            cardFrontMonth.innerHTML = m;
-    }
-})
-
-
-// Event listener for year 
-expYear.addEventListener('keypress', (event) => {
-
-    if(y.length < 2 ){
-        y += event.key; 
-        cardFrontYear.innerHTML = y ;
-    }
-})
-
-expYear.addEventListener('keydown', (event) => {
-
-    if(event.key === "Backspace" || event.key === "Delete"){
-
-            y = y.slice(0, -1);
-            cardFrontYear.innerHTML = y;
-    }
-})
-
-// Event listener for cvc 
-cardCvc.addEventListener('keypress', (event) => {
-
-    if(cvc.length < 3 ){
-        cvc += event.key; 
-        cardBackCvc.innerHTML = cvc ;
-    }
-})
-
-cardCvc.addEventListener('keydown', (event) => {
-
-    if(event.key === "Backspace" || event.key === "Delete"){
-
-        cvc = cvc.slice(0, -1);
-            cardBackCvc.innerHTML = cvc;
-    }
+cardCvc.addEventListener('input', (event) => {
+    let cvc = cardCvc.value;
+    cardBackCvc.innerHTML = cvc;
 })
