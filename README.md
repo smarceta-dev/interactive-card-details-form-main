@@ -37,7 +37,9 @@ scss
 ![](./cc-desktop-sh.png)
 
 ### Final mobile version screenshot: 
-![](./cc-mobile.png)
+<p align="center">
+  <img src="./cc-mobile-png" a/>
+</p>
 
 ## Links
 Solution URL: Will be updated soon~
