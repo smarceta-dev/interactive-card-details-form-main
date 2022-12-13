@@ -1,11 +1,27 @@
 
+
+.container {
+    @media only screen and (min-width: 87.5rem) {
+        display: flex;
+        height: 100vh;
+    }
+}
+
 .hero {
 
     background: linear-gradient(to top right, var(--color-neutral-very-dark-violet),var(--color-primary-mid-purple)) ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     padding: 3rem;
+
+    @media only screen and (min-width: 87.5rem) {
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column-reverse;
+        flex: 1 1 30%;
+    }
     
 }
 
@@ -15,14 +31,25 @@ main {
     padding: 2.5rem;
     overflow-x: auto;
 	white-space: nowrap;
-  
+    max-width: 50rem;
+
+    @media only screen and (min-width: 87.5rem) {
+        flex: 1 1 70%;
+        max-width: 100%;
+    }
+    
     
     form {
-        max-width: 100%;
+        width: 100%;
         box-sizing: border-box;
         
         fieldset {
             border: none;
+        }
+
+        @media only screen and (min-width: 87.5rem) {
+            max-width: 50%;
+            margin: 0 auto;
         }
     }
 
@@ -47,9 +74,9 @@ main {
 
     label {
         font-size: var(--font-size-default);
-        font-weight: 700;
+        font-weight: 500;
         margin: 3rem 0 1rem 0;
-        color: var(--color-primary-mid-purple);
+        color: black;
         
     }
 

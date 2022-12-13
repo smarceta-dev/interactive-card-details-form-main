@@ -12,6 +12,9 @@
 </head>
 <body>
 
+  <div class="container">
+
+  
   <section class="hero">
 
     <div class="credit-card__back">
@@ -47,7 +50,7 @@
      
 
       <label for="card_number">CARD NUMBER</label>
-      <input type="tel" inputmode="numeric" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required>
+      <input type="text" pattern="\d*" maxlength="20" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required>
 
       
       
@@ -56,14 +59,14 @@
         <div class="date-month-container">
           <label>EXP. DATE (MM/YY)</label>
           <div>
-            <input type="number" id="month"  placeholder="MM" required>
-            <input type="number"id="year"  placeholder="YY" required>
+            <input type="text" pattern="\d*" maxlength="2" id="month"  placeholder="MM" required>
+            <input type="text" pattern="\d*" maxlength="2" id="year"  placeholder="YY" required>
           </div>
         </div>
 
         <div class="cvc-container">
           <label>CVC</label>
-          <input type="number" id="cvc" maxlength="3" placeholder="e.g. 123" required>
+          <input type="text" pattern="\d*" maxlength="3"  id="cvc" maxlength="3" placeholder="e.g. 123" required>
         </div>
 
       </fieldset>
@@ -73,16 +76,12 @@
 
   </main>
 
+</div>
+
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Sanjin Marceta</a>.
-  </div>
+
+
 
   <script src="javascript/script.js"></script>
 </body>

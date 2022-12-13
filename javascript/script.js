@@ -17,7 +17,7 @@ cardCvc = document.getElementById('cvc');
 fullName.addEventListener('input', (event) => {
 
     let legalName = fullName.value;
-    cardFrontName.innerHTML = legalName;
+    cardFrontName.innerHTML = legalName.toUpperCase();
     
 })
 

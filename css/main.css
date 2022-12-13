@@ -1,21 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media only screen and (min-width: 87.5rem) {
+  .container {
+    display: flex;
+    height: 100vh; } }
+
 .hero {
   background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple));
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem; }
+  @media only screen and (min-width: 87.5rem) {
+    .hero {
+      justify-content: center;
+      gap: 2rem;
+      flex-direction: column-reverse;
+      flex: 1 1 30%; } }
 
 main {
   margin: auto;
   padding: 2.5rem;
   overflow-x: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  max-width: 50rem; }
+  @media only screen and (min-width: 87.5rem) {
+    main {
+      flex: 1 1 70%;
+      max-width: 100%; } }
   main form {
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box; }
     main form fieldset {
       border: none; }
+    @media only screen and (min-width: 87.5rem) {
+      main form {
+        max-width: 50%;
+        margin: 0 auto; } }
   main .date-month-cvc {
     display: flex;
     justify-content: center;
@@ -29,9 +49,9 @@ main {
     border-radius: 1rem; }
   main label {
     font-size: var(--font-size-default);
-    font-weight: 700;
+    font-weight: 500;
     margin: 3rem 0 1rem 0;
-    color: var(--color-primary-mid-purple); }
+    color: black; }
   main ::placeholder {
     color: var(--color-neutral-gray);
     font-size: var(--font-size-default); }
@@ -89,15 +109,32 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
-  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  overflow: hidden;
   margin-left: 4rem; }
   .credit-card__back p {
     margin-right: 4rem;
-    color: white; }
+    color: white;
+    font-size: 1em; }
+    @media only screen and (min-width: 103rem) {
+      .credit-card__back p {
+        margin-right: 6rem;
+        margin-top: 1.5rem; } }
+  @media only screen and (min-width: 103rem) {
+    .credit-card__back {
+      height: 22rem;
+      width: 44rem;
+      margin: 0;
+      margin-right: -50rem;
+      font-size: 3rem; } }
+  @media only screen and (min-width: 87.5rem) and (max-width: 103rem) {
+    .credit-card__back {
+      height: 20rem;
+      width: 35rem;
+      margin: 0;
+      font-size: 1.2rem;
+      margin-right: -45rem; } }
 
 .credit-card {
   background-image: url("/images/bg-card-front.png");
@@ -107,7 +144,7 @@ body {
   width: 30rem;
   color: white;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2em;
   margin-left: -4rem;
   margin-top: -6.7rem;
   z-index: 2;
@@ -116,7 +153,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 87.5rem) {
+      .credit-card .circle-container {
+        margin-bottom: 5rem; } }
     .credit-card .circle-container .circle {
       height: 3rem;
       width: 3rem;
@@ -129,13 +169,28 @@ body {
       border-radius: 100rem; }
   .credit-card #cc_number {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-align: center; }
   .credit-card .name-expdate-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    font-size: 1em; }
+  @media only screen and (min-width: 103rem) {
+    .credit-card {
+      height: 22rem;
+      width: 44rem;
+      margin: 0;
+      font-size: 1.4rem;
+      margin-right: -35rem; } }
+  @media only screen and (min-width: 87.5rem) and (max-width: 103rem) {
+    .credit-card {
+      height: 20rem;
+      width: 35rem;
+      margin: 0;
+      font-size: 1.2rem;
+      margin-right: -35rem; } }
 
 #submit {
   width: 100%;

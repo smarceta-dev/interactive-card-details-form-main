@@ -33,9 +33,16 @@ css
 flex
 scss
 
+### Final web version screenshot: 
+![](./cc-desktop-sh.png)
+
+### Final mobile version screenshot: 
+![](./cc-mobile.png)
+
 ## Links
 Solution URL: Will be updated soon~
 
 ## Continued Development: 
-
+- Add error messages when submitting form with invalid inputs
+- Do not allow user to add specific inputs like letters in the credit card number input
 
