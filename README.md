@@ -18,8 +18,6 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
 ### Expected behaviour
 
 - Update the details on the card as the user fills in the fields
@@ -28,18 +26,21 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 - Reset the form when the user clicks "Continue" on the completed state
 
 ## Built With
-html
-css
-flex
-scss
+- html
+- css
+- flex
+- scss
 
 ### Final web version screenshot: 
 ![](./cc-desktop-sh.png)
 
 ### Final mobile version screenshot: 
-<p align="center">
-  <img src="./cc-mobile-png" a/>
-</p>
+![img](./cc-mobile.png#center)
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
 
 ## Links
 Solution URL: Will be updated soon~
