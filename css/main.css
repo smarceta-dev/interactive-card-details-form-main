@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@media only screen and (min-width: 87.5rem) {
-  .container {
-    display: flex;
-    height: 100vh; } }
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 87.5rem) {
+    .container {
+      display: flex;
+      flex-direction: row; } }
 
 .hero {
   background: linear-gradient(to top right, var(--color-neutral-very-dark-violet), var(--color-primary-mid-purple));
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem; }
+  padding: 0 3rem 0rem 3rem;
+  flex: 1 1 30%; }
   @media only screen and (min-width: 87.5rem) {
     .hero {
       justify-content: center;
@@ -22,7 +27,10 @@ main {
   padding: 2.5rem;
   overflow-x: auto;
   white-space: nowrap;
-  max-width: 50rem; }
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 70%; }
   @media only screen and (min-width: 87.5rem) {
     main {
       flex: 1 1 70%;
@@ -112,7 +120,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 4rem; }
+  margin-left: 4rem;
+  transform: translateY(4rem); }
   .credit-card__back p {
     margin-right: 4rem;
     color: white;
@@ -148,7 +157,8 @@ body {
   margin-left: -4rem;
   margin-top: -6.7rem;
   z-index: 2;
-  color: white; }
+  color: white;
+  transform: translateY(4rem); }
   .credit-card .circle-container {
     display: flex;
     align-items: center;
@@ -201,3 +211,16 @@ body {
   border: none;
   border-radius: 0.5rem;
   margin-top: 3rem; }
+
+.thank-you-display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; }
+  .thank-you-display-container h2 {
+    font-size: 3rem; }
+  .thank-you-display-container h3 {
+    font-size: 2rem;
+    color: var(--color-neutral-dark-grey-violet);
+    font-weight: 100; }

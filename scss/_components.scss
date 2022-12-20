@@ -9,6 +9,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-left: 4rem;
+    transform: translateY(4rem);
    
     p{
         margin-right: 4rem;
@@ -53,8 +54,8 @@
     margin-left: -4rem;
     margin-top: -6.7rem;
     z-index: 2;
-
     color: white;
+    transform: translateY(4rem);
     
    
     .circle-container{
@@ -115,8 +116,6 @@
     
 }
 
-
-
 #submit {
     width: 100%;
     padding: 1.5rem;
@@ -127,3 +126,22 @@
     border-radius: 0.5rem;
     margin-top: 3rem;
   }
+
+  .thank-you-display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 { 
+        font-size: 2rem;
+        color: var(--color-neutral-dark-grey-violet);
+        font-weight: 100;
+    }
+}

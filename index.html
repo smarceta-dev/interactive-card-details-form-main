@@ -14,7 +14,6 @@
 
   <div class="container">
 
-  
   <section class="hero">
 
     <div class="credit-card__back">
@@ -41,48 +40,69 @@
    
   </section>
 
-
   <main>
-
-    <form>
+    <form id="cc_form">
       <label for="cardholder_name">CARDHOLDER NAME</label>
       <input type="text" id="cardholder_name" placeholder="e.g. Mark Smith"required>
-     
 
       <label for="card_number">CARD NUMBER</label>
-      <input type="text" pattern="\d*" maxlength="20" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required>
+      <input 
+        type="text" 
+        maxlength="19" id="card_number" 
+        placeholder="e.g. 1234 5678 9123 0000" 
+        required 
+      >
+      <div id="cc-input-error"></div>
 
-      
-      
       <fieldset class="date-month-cvc">
-
         <div class="date-month-container">
           <label>EXP. DATE (MM/YY)</label>
           <div>
-            <input type="text" pattern="\d*" maxlength="2" id="month"  placeholder="MM" required>
-            <input type="text" pattern="\d*" maxlength="2" id="year"  placeholder="YY" required>
+            <input 
+              type="text" 
+              pattern="\d*" 
+              maxlength="2" 
+              id="month"  
+              placeholder="MM" 
+              required 
+              onKeyPress="if(this.value.length==2) return false;"
+            >
+            
+
+            <input 
+              type="text" 
+              pattern="\d*" 
+              maxlength="2" 
+              id="year"  
+              placeholder="YY" 
+              required 
+              onKeyPress="if(this.value.length==2) return false;"
+              >
           </div>
         </div>
 
+
         <div class="cvc-container">
           <label>CVC</label>
-          <input type="text" pattern="\d*" maxlength="3"  id="cvc" maxlength="3" placeholder="e.g. 123" required>
+          <input 
+            type="number" 
+            pattern="\d*" 
+            id="cvc" 
+            maxlength="3" 
+            placeholder="e.g. 123" 
+            required 
+            onKeyPress="if(this.value.length==3) return false;"
+          >
         </div>
 
       </fieldset>
 
       <button id="submit">Confirm</button>
     </form>
-
   </main>
-
 </div>
-
-  <!-- Completed state start -->
-
-
-
-
+  <script src="javascript/thankYouDisplay.js"></script>
   <script src="javascript/script.js"></script>
+
 </body>
 </html>
