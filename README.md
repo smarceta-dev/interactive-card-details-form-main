@@ -35,12 +35,9 @@ Your users should be able to:
 ![](./cc-desktop-sh.png)
 
 ### Final mobile version screenshot: 
-![img](./cc-mobile.png#center)
+![](./cc-mobile.png)
 
-img[src*='#center'] {
-    display: block;
-    margin: auto;
-}
+
 
 ## Links
 Solution URL: Will be updated soon~
